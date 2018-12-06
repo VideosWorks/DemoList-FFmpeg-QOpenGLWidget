@@ -10,24 +10,73 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\alien.c" />
+    <ClCompile Include="src\asteroid.c" />
+    <ClCompile Include="src\burst.c" />
+    <ClCompile Include="src\explosion.c" />
+    <ClCompile Include="src\game.c" />
+    <ClCompile Include="src\geometry.c" />
+    <ClCompile Include="src\hiscore.c" />
+    <ClCompile Include="src\intersect.c" />
+    <ClCompile Include="src\libbmpread\bmpread.c" />
+    <ClCompile Include="src\list.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\player.c" />
+    <ClCompile Include="src\powerup.c" />
+    <ClCompile Include="src\render.c" />
+    <ClCompile Include="src\shot.c" />
+    <ClCompile Include="src\sound.c" />
+    <ClCompile Include="src\starfield.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\asteroid.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\asteroid.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\alien.h" />
+    <ClInclude Include="src\asteroid.h" />
+    <ClInclude Include="src\burst.h" />
+    <ClInclude Include="src\explosion.h" />
+    <ClInclude Include="src\game.h" />
+    <ClInclude Include="src\geometry.h" />
+    <ClInclude Include="src\hiscore.h" />
+    <ClInclude Include="src\intersect.h" />
+    <ClInclude Include="src\libbmpread\bmpread.h" />
+    <ClInclude Include="src\list.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="src\player.h" />
+    <ClInclude Include="src\powerup.h" />
+    <ClInclude Include="src\render.h" />
+    <ClInclude Include="src\resource.h" />
+    <ClInclude Include="src\shot.h" />
+    <ClInclude Include="src\sound.h" />
+    <ClInclude Include="src\starfield.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E98F6441-56F7-4F13-8176-9A1665C7BA88}</ProjectGuid>
+    <ProjectGuid>{889AF287-6F05-47AA-8C2B-645AAE486962}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Opengl</RootNamespace>
+    <RootNamespace>Win32Project4</RootNamespace>
+    <ProjectName>Game</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -51,13 +100,14 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NO_SOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>OpenGL32.Lib;GlU32.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\89850\Desktop\Win32Project4\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -68,50 +118,18 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;NO_SOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>OpenGL32.Lib;GlU32.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\ProgramSoft\000Coder\FreeGLUT\freeglut-MSVC-3.0.0-2.mp\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="BasicGraphic.h" />
-    <ClInclude Include="Blend.h" />
-    <ClInclude Include="CBMPLoader.h" />
-    <ClInclude Include="DisplayList.h" />
-    <ClInclude Include="Example.h" />
-    <ClInclude Include="GLApplication.h" />
-    <ClInclude Include="GLKeys.h" />
-    <ClInclude Include="GLTexture.h" />
-    <ClInclude Include="GLWindows.h" />
-    <ClInclude Include="Graphics.h" />
-    <ClInclude Include="Light.h" />
-    <ClInclude Include="Texture.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BasicGraphic.cpp" />
-    <ClCompile Include="Blend.cpp" />
-    <ClCompile Include="CBMPLoader.cpp" />
-    <ClCompile Include="DisplayList.cpp" />
-    <ClCompile Include="Example.cpp" />
-    <ClCompile Include="GLApplication.cpp" />
-    <ClCompile Include="GLKeys.cpp" />
-    <ClCompile Include="GLTexture.cpp" />
-    <ClCompile Include="GLWindows.cpp" />
-    <ClCompile Include="Graphics.cpp" />
-    <ClCompile Include="Light.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Texture.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="image\image.bmp" />
-    <Image Include="image\wall.bmp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

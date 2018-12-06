@@ -2,13 +2,25 @@
 #include "Example.h"
 #include "BasicGraphic.h"
 #include "Graphics.h"
+#include "Light.h"
+#include "DisplayList.h"
+#include "Texture.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	int ret = -1;
+	
 	//Example* pExample = new Example("Example");
+	
 	//BasicGraphic* pExample = new BasicGraphic("BasicGraphic");
-	Graphics* pExample = new Graphics("Graphics");
+	
+	//Graphics* pExample = new Graphics("Graphics");
+	
+	//Light* pExample = new Light("Light");
+	
+	//DisplayList* pExample = new DisplayList("DisplayList");
+	
+	Texture* pExample = new Texture("Texture");
 	if (pExample != NULL)
 	{
 		ret = pExample->Main(hInstance, hPrevInstance, lpCmdLine, nCmdShow);

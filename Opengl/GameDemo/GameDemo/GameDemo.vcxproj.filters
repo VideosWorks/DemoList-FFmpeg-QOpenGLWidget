@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\alien.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\asteroid.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\burst.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\explosion.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geometry.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hiscore.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intersect.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\list.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\player.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\powerup.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shot.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sound.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\starfield.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libbmpread\bmpread.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\asteroid.ico">
+      <Filter>源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\asteroid.rc">
+      <Filter>源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\alien.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\asteroid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\burst.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\explosion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\geometry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hiscore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\intersect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\player.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\powerup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sound.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\starfield.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libbmpread\bmpread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\config.h">
+      <Filter>头文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

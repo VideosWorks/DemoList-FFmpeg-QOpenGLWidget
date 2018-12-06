@@ -45,6 +45,24 @@
     <ClInclude Include="Graphics.h">
       <Filter>头文件\case</Filter>
     </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>头文件\case</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayList.h">
+      <Filter>头文件\case</Filter>
+    </ClInclude>
+    <ClInclude Include="GLTexture.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="CBMPLoader.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>头文件\case</Filter>
+    </ClInclude>
+    <ClInclude Include="Blend.h">
+      <Filter>头文件\case</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GLWindows.cpp">
@@ -68,5 +86,31 @@
     <ClCompile Include="Graphics.cpp">
       <Filter>源文件\case</Filter>
     </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>源文件\case</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayList.cpp">
+      <Filter>源文件\case</Filter>
+    </ClCompile>
+    <ClCompile Include="GLTexture.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="CBMPLoader.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>源文件\case</Filter>
+    </ClCompile>
+    <ClCompile Include="Blend.cpp">
+      <Filter>源文件\case</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="image\image.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="image\wall.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>
