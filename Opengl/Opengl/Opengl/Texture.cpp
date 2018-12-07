@@ -12,7 +12,7 @@ bool Texture::Initialize()
 	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
 	glCullFace(GL_BACK);
 
-	initTexture();
+	InitTexture();
 	return true;
 }
 
@@ -78,7 +78,7 @@ void Texture::Draw()
 	glEnd();
 }
 
-void Texture::initTexture()
+void Texture::InitTexture()
 {
 	glEnable(GL_TEXTURE_2D);
 	if (!m_Texture.LoadBitmap("image/image.bmp"))

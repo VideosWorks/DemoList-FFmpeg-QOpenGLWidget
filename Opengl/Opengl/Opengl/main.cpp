@@ -5,6 +5,10 @@
 #include "Light.h"
 #include "DisplayList.h"
 #include "Texture.h"
+#include "Blend.h"
+#include "Fog.h"
+#include "Quadrics.h"
+#include "Selection.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
@@ -20,7 +24,15 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	
 	//DisplayList* pExample = new DisplayList("DisplayList");
 	
-	Texture* pExample = new Texture("Texture");
+	//Texture* pExample = new Texture("Texture");
+
+	//Blend* pExample = new Blend("Blend");
+	
+	//Fog* pExample = new Fog("Fog");
+	
+	//Quadrics* pExample = new Quadrics("Quadrics");
+	
+	Selection* pExample = new Selection("Selection");
 	if (pExample != NULL)
 	{
 		ret = pExample->Main(hInstance, hPrevInstance, lpCmdLine, nCmdShow);

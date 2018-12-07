@@ -31,6 +31,10 @@ void GLApplication::TerminateApplication()
 
 LRESULT GLApplication::Message(HWND hwnd, UINT uMsg, WPARAM wParam, WPARAM lParam)
 {
+	static POINT oldMousePos;
+	static POINT currentMousePos;
+	static bool isMouseActice;
+
 	switch (uMsg)
 	{
 	case WM_SYSCOMMAND:
@@ -105,6 +109,26 @@ LRESULT GLApplication::Message(HWND hwnd, UINT uMsg, WPARAM wParam, WPARAM lPara
 	case WM_KEYUP:
 		m_keys.SetReleased(wParam);
 		return 0;
+		break;
+
+	case WM_LBUTTONDOWN:
+		oldMousePos.x = currentMousePos.x = LOWORD(lParam);
+		oldMousePos.y = currentMousePos.y = HIWORD(lParam);
+		isMouseActice = true;
+		return 0;
+		break;
+
+	case WM_LBUTTONUP:
+		isMouseActice = false;
+		ProcessObjects(currentMousePos.x, currentMousePos.y);
+		break;
+
+	case WM_MOUSEMOVE:
+		currentMousePos.x = LOWORD(lParam);
+		currentMousePos.y = HIWORD(lParam);
+
+		oldMousePos.x = currentMousePos.y;
+		oldMousePos.y = currentMousePos.y;
 		break;
 
 	case WM_TOGGLEFULLSCREEN: //切换全屏和窗口模式

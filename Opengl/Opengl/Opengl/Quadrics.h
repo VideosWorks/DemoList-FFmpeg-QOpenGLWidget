@@ -1,10 +1,9 @@
-#ifndef _TEXTURE_H
-#define _TEXTURE_H
-
+#ifndef _QUADRICS_H
+#define _QUADRICS_H
 #include "GLApplication.h"
-#include "CBMPLoader.h"
+#include "gl/GLU.h"
 
-class Texture : public GLApplication
+class Quadrics : public GLApplication
 {
 public:
 	virtual bool Initialize() override;
@@ -12,11 +11,11 @@ public:
 	virtual void Update(DWORD dMillSeconds) override;
 	virtual void Draw() override;
 
-	Texture(const char* pClassName);
+	Quadrics(const char* pClassName);
 private:
-	void InitTexture();
+	void InitQuadric();
 private:
-	CBMPLoader m_Texture;
 	float m_Angle; 
+	GLUquadric* m_pQuadric;
 };
 #endif

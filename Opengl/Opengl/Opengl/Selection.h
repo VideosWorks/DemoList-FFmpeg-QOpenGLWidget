@@ -1,10 +1,8 @@
-#ifndef _TEXTURE_H
-#define _TEXTURE_H
-
+#ifndef _SELECTION_H
+#define _SELECTION_H
 #include "GLApplication.h"
-#include "CBMPLoader.h"
 
-class Texture : public GLApplication
+class Selection : public GLApplication
 {
 public:
 	virtual bool Initialize() override;
@@ -12,11 +10,10 @@ public:
 	virtual void Update(DWORD dMillSeconds) override;
 	virtual void Draw() override;
 
-	Texture(const char* pClassName);
+	Selection(const char* pClassName);
 private:
-	void InitTexture();
+	void ProcessObjects(int xPos, int yPos);
 private:
-	CBMPLoader m_Texture;
-	float m_Angle; 
+	float m_Angle;
 };
 #endif

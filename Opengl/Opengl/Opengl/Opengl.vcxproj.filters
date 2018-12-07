@@ -63,6 +63,15 @@
     <ClInclude Include="Blend.h">
       <Filter>头文件\case</Filter>
     </ClInclude>
+    <ClInclude Include="Fog.h">
+      <Filter>头文件\case</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadrics.h">
+      <Filter>头文件\case</Filter>
+    </ClInclude>
+    <ClInclude Include="Selection.h">
+      <Filter>头文件\case</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GLWindows.cpp">
@@ -102,6 +111,15 @@
       <Filter>源文件\case</Filter>
     </ClCompile>
     <ClCompile Include="Blend.cpp">
+      <Filter>源文件\case</Filter>
+    </ClCompile>
+    <ClCompile Include="Fog.cpp">
+      <Filter>源文件\case</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadrics.cpp">
+      <Filter>源文件\case</Filter>
+    </ClCompile>
+    <ClCompile Include="Selection.cpp">
       <Filter>源文件\case</Filter>
     </ClCompile>
   </ItemGroup>

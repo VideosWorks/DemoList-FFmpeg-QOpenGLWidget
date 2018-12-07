@@ -20,6 +20,8 @@ protected:
 	virtual void Update(DWORD dMillSeconds) = 0;
 	//绘制
 	virtual void Draw() = 0;
+	//处理选择事件
+	virtual void ProcessObjects(int xPos, int yPos){};
 
 	//切换全屏模式
 	void ToggleFullScreen();
@@ -27,7 +29,6 @@ protected:
 	void TerminateApplication();
 	//窗口重新绘制
 	void ResizeDraw(bool bEnable);
-
 protected:
 	GLWindow m_Window;
 	GLKeys m_keys;
